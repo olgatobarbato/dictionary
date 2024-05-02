@@ -1,0 +1,37 @@
+.searchBar {
+  display: flex;
+  gap: 17px;
+
+  .textInput,
+  .submitInput {
+    border-radius: 5px;
+  }
+  .textInput {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    border-color: black;
+    border-width: thin;
+    transition: all 0.3s;
+  }
+  .textInput:focus {
+    outline-color: rgb(4, 4, 250);
+    outline-width: 3px;
+    transform: scale(1.1);
+  }
+
+  .submitInput {
+    width: 100px;
+    color: white;
+    background-color: black;
+    border: none;
+    transition: all 0.3s;
+  }
+  .submitInput:hover {
+    color: white;
+    background-color: #981616;
+    border: none;
+    transform: scale(1.1);
+  }
+}

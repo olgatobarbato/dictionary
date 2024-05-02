@@ -1,0 +1,50 @@
+.searchResults {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  gap: 20px;
+
+  li {
+    list-style: inside;
+  }
+
+  .entry {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+  .partOfSpeech {
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+
+  .definitions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .meaning {
+    margin-bottom: 20px;
+  }
+  .link {
+    text-decoration: underline;
+    transition: all 0.35s;
+  }
+  .link:hover {
+    color: grey;
+  }
+
+  .definition-group:after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
